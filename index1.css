@@ -1,4 +1,4 @@
-.bbb.zzz.xxx {
+.bbb .zzz.xxx {
 	color: red;
 }
-/* элемент с классом zzz, bbb и xxx */
+/* элемент с классом zzz и xxx, внутри элемента с классом bbb */
