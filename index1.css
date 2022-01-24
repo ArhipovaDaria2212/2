@@ -1,4 +1,3 @@
-#elem .bbb {
-	color: red;
+#block h1, #block h2 {
+	text-align: center;
 }
-/* элемент классом bbb, который находится внутри элемента с id = elem*/
