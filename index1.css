@@ -1,7 +1,9 @@
 h2 {
 	font-size: 20px;
+	color: blue;
 }
 h2 {
-	font-size: 30px;
+	font-style: italic;
+	color: red;
 }
-/* заголовки размером 30px */
+/* заголовок размером 20px, курсив и красным цветом */
