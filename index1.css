@@ -1,3 +1,7 @@
-.fff h2.bbb {
-	text-align: center;
+h2 {
+	font-size: 20px;
 }
+h2 {
+	font-size: 30px;
+}
+/* заголовки размером 30px */
