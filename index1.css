@@ -1,12 +1,8 @@
-.success {
-	color: green;
+.cyan {
+	font-size: 150px;
 }
-.error {
-	color: red;
+.fuchsia {
+	font-style: italic;
 }
-.large {
-	font-size: 30px;
-}
-.small {
-	font-size: 20px;
-}
+.medium {
+	color: mediumaquamarine;
