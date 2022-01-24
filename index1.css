@@ -1,4 +1,4 @@
-#elem.bbb {
+h2#elem.bbb {
 	color: red;
 }
-/* элемент с id = elem и классом bbb */
+/* элемент с тегом h2, id = elem и классом bbb */
