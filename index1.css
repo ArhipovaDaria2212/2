@@ -3,7 +3,12 @@
     border: 1px dashed blue;
 }
 #child {
-    height: 400px;
-    border: 1px solid orange ;
-    margin: 50px;
+    height: 300px;
+    border: 1px dashed green ;
+    margin: 30px;
+}
+#small {
+    height: 240px;
+    border: 1px solid red;
+    margin: 30px;
 }
