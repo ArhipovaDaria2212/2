@@ -1,3 +1,10 @@
-a[href$=".html"] {
-    font-size: 50px; 
+#parent {
+	width: 300px;
+	border: 1px solid orange;
+}
+#child {
+	margin: 30px 70px 190px 20px;
+	
+	height: 80px;
+	border: 1px dashed blue;
 }
