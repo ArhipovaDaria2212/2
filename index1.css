@@ -1,3 +1,9 @@
-a[href$=".html"] {
-    font-size: 50px; 
+div {
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-bottom: 100px;
+    border:1px red solid;
+    text-align: justify;
+    width: 200px;
 }
