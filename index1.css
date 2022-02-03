@@ -1,5 +1,8 @@
 div {
-    width: 200px;
+    width: 300px;
 	height: 200px;
-    background-color: #4668d6;
+    color: white;
+    font-size: 30px;
+    background-color: #62df96;
+    text-align: center;
 }
