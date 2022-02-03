@@ -1,8 +1,6 @@
 div {
-border-left: 3px solid red;
-border-top: 1px solid blue;
-border-right: 3px dotted green;
-border-bottom: 1px solid blue;
-width: 300px;
+border: 1px solid green;
+border-radius: 30px;
+width: 200px;
 height: 200px;
 }
