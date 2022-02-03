@@ -1,7 +1,7 @@
-a {
+a.zzz {
 	color: red;
 }
-a:hover {
+a.zzz:hover {
 	text-decoration: none;
 }
-/* он выберет все ссылки */
+/* он выберет ссылки с классом zzz*/
