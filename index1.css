@@ -1,7 +1,7 @@
-a.zzz {
+#block a.zzz {
 	color: red;
 }
-a.zzz:hover {
+#block a.zzz:hover {
 	text-decoration: none;
 }
-/* он выберет ссылки с классом zzz*/
+/* он выберет ссылки с классом zzz, которые находятся в элементе с id=block*/
