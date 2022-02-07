@@ -1,5 +1,5 @@
-.parent {
-	display: flex;
+.parent	{
+	display: inline-flex;
 	border: 1px solid red;
 }
 .child {
