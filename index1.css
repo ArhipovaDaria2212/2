@@ -1,3 +1,13 @@
-ol {
-    list-style-type: upper-alpha;
+.x {
+    padding: 10px;
+    border: 10px red solid;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+.a {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin-bottom: 20px;
 }
