@@ -1,3 +1,21 @@
-ol {
-    list-style-type: upper-alpha;
+.parent {
+    border: 1px red solid;
+}
+.child {
+    height: 100px;
+    width: 100px;
+    border: 1px green solid;
+    margin: 10px auto;
+}
+.small {
+    height: 100px;
+    width: 200px;
+    border: 1px green solid;
+    margin: 10px auto;
+}
+.vary {
+    height: 100px;
+    width: 300px;
+    border: 1px green solid;
+    margin: 10px auto;
 }
