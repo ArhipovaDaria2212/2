@@ -4,6 +4,7 @@
 	border: 1px solid red;
 }
 .child {
+    text-align: center;
     display: inline-block;
 	width: 100px;
 	padding: 10px;
