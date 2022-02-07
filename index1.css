@@ -1,3 +1,24 @@
-ol {
-    list-style-type: upper-alpha;
+.a1{
+    position: absolute;
+    background: red;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+.a2{
+    position: absolute;
+    background: blue;
+    top: 70px;
+    left: 70px;
+    width: 50px;
+    height: 50px;
+}
+.a3{
+    position: absolute;
+    background: green;
+    top: 90px;
+    left: 90px;
+    width: 50px;
+    height: 50px;
 }
