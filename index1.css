@@ -1,3 +1,8 @@
-ol {
-    list-style-type: upper-alpha;
+.parent {
+	padding: 10px 0;
+	border: 1px solid red;
+    text-align: center;
+}
+a {
+    border: solid 1px green;
 }
