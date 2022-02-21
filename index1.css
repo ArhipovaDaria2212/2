@@ -1,3 +1,34 @@
-ol {
-    list-style-type: upper-alpha;
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 250px;
+    text-align: center;
+    background-color: rgba(9, 95, 52, 0.527);
+    font-size: 30px;
+    
+   }
+.title, .val {
+    display: inline-flex;
+    text-decoration: underline;
+}
+#zagolovok {
+    font-style: oblique;
+    font-size: 50px;
+    text-decoration: none;
+}
+button{
+    border: rgb(217, 241, 218) dashed 5px;
+    color: rgb(11, 82, 58);
+    height: 50px;
+    border-radius: 20px;
+    margin: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+button:hover {
+    border: rgb(18, 78, 18) dashed 5px;
+}
+#btn_prev, #btn_next {
+    width: 200px;
 }
