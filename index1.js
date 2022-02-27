@@ -42,8 +42,9 @@ function load_all() {
     document.getElementById('name').textContent = students[id].name
     document.getElementById('surname').textContent = students[id].surname
     document.getElementById('scores').textContent = students[id].scores
-   
-    }
+    document.getElementById('average').textContent = ' ' + (Array.from(students[id].scores).reduce((a, b) => (a + b)) / 5)
+    document.getElementById('logo').textContent = students[id].logo
+}
     
     function next() {
     id_current++
@@ -64,7 +65,4 @@ function load_all() {
     load_student(id_current)
     } 
     
-    function sr_arif() {
-        document.getElementById('scores').COMMENT_NODE = students[id].scores
-            for 
-    }
+    
