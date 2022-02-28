@@ -32,3 +32,8 @@ button:hover {
 #btn_prev, #btn_next {
     width: 200px;
 }
+.img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 20%;
+}
