@@ -1,18 +1,13 @@
-body {
-    text-align: center;
-}
-div {
+.parent {
+    width: 400px;
     border: 1px solid black;
-	width: 500px;
-	text-align: justify;
-    padding: 5px 20px 5px 20px; 
+    padding: 20px;
+    text-align: justify;
 }
-.first {
-	float: left;
-    margin-right: 20px;
-}
-.second {
+.child {
+    width: 90px;
+    height: 60px;
+    border: 1px solid green;
     float: right;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: 20px 0px 20px 20px;
 }
