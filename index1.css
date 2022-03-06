@@ -4,10 +4,12 @@
     padding: 20px;
     text-align: justify;
 }
+
 .child {
     width: 90px;
     height: 60px;
     border: 1px solid green;
     float: right;
     margin: 20px 0px 20px 20px;
+    text-align: center;
 }
