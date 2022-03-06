@@ -1,24 +1,13 @@
-.a1{
-    position: absolute;
-    background: red;
-    top: 50px;
-    left: 50px;
-    width: 50px;
-    height: 50px;
+div {
+	width: 400px;
+	text-align: justify;
 }
-.a2{
-    position: absolute;
-    background: blue;
-    top: 70px;
-    left: 70px;
-    width: 50px;
-    height: 50px;
+img {
+    width: 100px;
 }
-.a3{
-    position: absolute;
-    background: green;
-    top: 90px;
-    left: 90px;
-    width: 50px;
-    height: 50px;
+.first {
+	float: left;
+}
+.second {
+    float: right;
 }
