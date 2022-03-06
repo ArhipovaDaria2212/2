@@ -1,16 +1,12 @@
-.parent {
-    border: 1px solid black;
-    text-align: justify;
+.parent	{
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	height: 400px;
+	border: 1px solid red;
 }
-
-.parent div:not(div.clearfix){
-    width: 100px;
-    height: 50px;
-    border: 1px solid green;
-    float: right;
-    margin: 20px;
-    text-align: center;
-}
-.clearfix {
-    clear: both;
+.child {
+	width: 100px;
+	height: 50px;
+	border: 1px solid green;
 }
