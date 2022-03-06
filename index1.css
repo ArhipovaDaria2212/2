@@ -1,7 +1,7 @@
 .parent	{
 	display: flex;
-	flex-direction: column;
-    justify-content: flex-end;
+	flex-direction: row-reverse;
+    justify-content: flex-start;
 	width: 800px;
 	height: 400px;
 	border: 1px solid red;
