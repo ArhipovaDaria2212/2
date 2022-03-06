@@ -1,13 +1,18 @@
-div {
-	width: 400px;
-	text-align: justify;
+body {
+    text-align: center;
 }
-img {
-    width: 100px;
+div {
+    border: 1px solid black;
+	width: 500px;
+	text-align: justify;
+    padding: 5px 20px 5px 20px; 
 }
 .first {
 	float: left;
+    margin-right: 20px;
 }
 .second {
     float: right;
+    margin-left: 20px;
+    margin-top: 20px;
 }
