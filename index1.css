@@ -1,9 +1,9 @@
 .parent	{
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: row;
     justify-content: center; 
     align-items: flex-end;
-    gap: 40px;
+    gap: 60px;
 	width: 800px;
 	height: 400px;
 	border: 1px solid red;
