@@ -1,15 +1,17 @@
 .parent {
-    width: 400px;
     border: 1px solid black;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: justify;
 }
 
-.child {
-    width: 90px;
-    height: 60px;
+.parent div:not(div.clearfix){
+    width: 100px;
+    height: 50px;
     border: 1px solid green;
-    float: right;
-    margin: 20px 0px 20px 20px;
+    float: left;
+    margin: 20px;
     text-align: center;
+}
+.clearfix {
+    clear: both;
 }
