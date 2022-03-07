@@ -5,15 +5,16 @@
 <style></style>
 <script>
     var canvas = document.getElementById('canvas'); 
-    var ctx = canvas.getContext('2d'); 
+    var c = canvas.getContext('2d'); 
     var data = [100, 200, 300, 200, 100]
     
-    ctx.fillStyle = "yellow";
-    ctx.translate(50,50);
-    var rads = 45 * Math.PI*2.0/360.0;
-    ctx.rotate(rads)
-
-    ctx.fillRect(100,0,100,100);
+    for(var i=0; i<data.length; i++) {
+    c.save();
+    c.translate(40+i*100, 460-dp*4);
+    var dp = data[i];
+    c.fillRect(0,0,50,dp*4);
+    c.restore();
+    }
 </script> 
 </body> 
 </html>
