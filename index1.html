@@ -5,28 +5,18 @@
 <style></style>
 <script>
     var canvas = document.getElementById('canvas'); 
-    var ctx = canvas.getContext('2d'); 
+    var c = canvas.getContext('2d'); 
     var data = [100, 200, 300, 200, 100]
     
-    ctx.fillStyle = 'red';
-    ctx.fillRect(0,0,400,100);
-
-    
-    ctx.beginPath();
-    ctx.moveTo(200,50);
-    ctx.lineTo(250,150);
-    ctx.lineTo(150,150);
-    ctx.closePath();
-
-    
-    ctx.lineWidth = 10;
-    ctx.stroke();
-
-    
-    ctx.clip();
-    
-    ctx.fillStyle = 'yellow';
-    ctx.fillRect(0,0,400,100);
+    c.fillStyle = 'red';
+    c.beginPath();
+    c.arc(100,100, 40,  0,Math.PI*2,  );
+    c.closePath();
+    c.lineWidth = 10;
+    c.stroke();
+    var a = c.isPointInPath(80,0);     // возвращает true
+    var b = c.isPointInPath(200,100);  // возвращает false
+    console.log(a,b);
 </script> 
 </body> 
 </html>
