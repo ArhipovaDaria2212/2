@@ -1,7 +1,7 @@
 <html> 
 
 <body> 
-<canvas width="1500" height="500" id="canvas"></canvas> 
+<canvas width="1500" height="1000" id="canvas"></canvas> 
 <style></style>
 <script>
     var canvas = document.getElementById('canvas'); 
@@ -19,18 +19,58 @@
             }; 
     })();
 
-    var x = 0; 
-    function drawIt() { 
-    window.requestAnimFrame(drawIt); 
     var canvas = document.getElementById('canvas'); 
-    var c = canvas.getContext('2d'); 
-    c.clearRect(0,0,canvas.width,canvas.height); 
-    c.fillStyle = "yellow"; 
-    c.fillRect(x,100,200,100); 
-    x+=5; 
+    var particles = []; 
+    function loop() { 
+    window.requestAnimFrame(loop); 
+    createParticles(); 
+    updateParticles(); 
+    killParticles(); 
+    drawParticles(); 
     } 
-    window.requestAnimFrame(drawIt);
-    
+    window.requestAnimFrame(loop);
+
+    function createParticles() { 
+    if(particles.length < 100) { 
+    particles.push({ 
+      x: Math.random()*canvas.width, 
+      y: 0, 
+      speed: 10+Math.random()*3, 
+      radius: 5+Math.random()*5, 
+      color: "white", 
+    }); 
+  } 
+}
+
+function updateParticles() { 
+  for(var i in particles) { 
+    var part = particles[i]; 
+    part.y += part.speed;
+  }
+}
+
+function killParticles() { 
+  for(var i in particles) { 
+    var part = particles[i]; 
+    if(part.y > canvas.height) { 
+      part.y = 0; 
+    } 
+  } 
+}
+
+function drawParticles() { 
+  var c = canvas.getContext('2d'); 
+  c.fillStyle = "black"; 
+  c.fillRect(0,0,canvas.width,canvas.height); 
+  for(var i in particles) { 
+    var part = particles[i]; 
+    c.beginPath(); 
+    c.arc(part.x,part.y, part.radius, 0, Math.PI*2); 
+    c.closePath(); 
+    c.fillStyle = part.color; 
+    c.fill(); 
+  } 
+}
 </script> 
 </body> 
 </html>
