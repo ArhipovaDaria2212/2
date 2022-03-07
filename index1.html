@@ -1,18 +1,18 @@
 <html> 
 
 <body> 
-<canvas width="500" height="500" id="canvas"></canvas> 
+<canvas width="700" height="500" id="canvas"></canvas> 
 <style></style>
 <script>
     var canvas = document.getElementById('canvas'); 
     var ctx = canvas.getContext('2d'); 
-    
-    ctx.fillStyle = 'red';
-    ctx.globalAlpha = 50/100; 
-    ctx.fillRect(0,0,100,100);
-    ctx.globalAlpha = 30/100;
-    ctx.fillRect(50,50,100,100);
-    ctx.globalAlpha = 1.0;
+    var data = [100, 200, 300, 200, 100]
+    ctx.fillStyle = "red";
+        for(var i=0; i<data.length; i++) {
+            var dp = data[i];
+            ctx.translate(100, 50);
+            ctx.fillRect(0,0,50,dp);
+        }
 </script> 
 </body> 
 </html>
