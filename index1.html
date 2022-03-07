@@ -1,22 +1,36 @@
 <html> 
 
 <body> 
-<canvas width="700" height="500" id="canvas"></canvas> 
+<canvas width="1500" height="500" id="canvas"></canvas> 
 <style></style>
 <script>
     var canvas = document.getElementById('canvas'); 
     var c = canvas.getContext('2d'); 
     var data = [100, 200, 300, 200, 100]
     
-    c.fillStyle = 'red';
-    c.beginPath();
-    c.arc(100,100, 40,  0,Math.PI*2,  );
-    c.closePath();
-    c.lineWidth = 10;
-    c.stroke();
-    var a = c.isPointInPath(80,0);     // возвращает true
-    var b = c.isPointInPath(200,100);  // возвращает false
-    console.log(a,b);
+    window.requestAnimFrame = (function(){ 
+    return  window.requestAnimationFrame       || 
+            window.webkitRequestAnimationFrame || 
+            window.mozRequestAnimationFrame    || 
+            window.oRequestAnimationFrame      || 
+            window.msRequestAnimationFrame     || 
+            function( callback ){ 
+                window.setTimeout(callback, 1000 / 60); 
+            }; 
+    })();
+
+    var x = 0; 
+    function drawIt() { 
+    window.requestAnimFrame(drawIt); 
+    var canvas = document.getElementById('canvas'); 
+    var c = canvas.getContext('2d'); 
+    c.clearRect(0,0,canvas.width,canvas.height); 
+    c.fillStyle = "yellow"; 
+    c.fillRect(x,100,200,100); 
+    x+=5; 
+    } 
+    window.requestAnimFrame(drawIt);
+    
 </script> 
 </body> 
 </html>
