@@ -1,47 +1,18 @@
 <html> 
+
 <body> 
 <canvas width="500" height="500" id="canvas"></canvas> 
-<script> 
-    var data = [ 100, 68, 20, 30, 100 ]; 
+<style></style>
+<script>
     var canvas = document.getElementById('canvas'); 
-    var c = canvas.getContext('2d'); 
-
-     c.fillStyle = "white"; 
-     c.fillRect(0,0,500,500); 
-
-    var colors = [ "orange", "green", "blue", "yellow", "teal"]; 
-    // var colors = ["dark orange"]
-    var total = 0; 
-        for(var i=0; i<data.length; i++) { 
-        total += data[i]; 
-        }
+    var ctx = canvas.getContext('2d'); 
     
-        var prevAngle = 0; 
-        for(var i=0; i<data.length; i++) { 
-        var fraction = data[i]/total; 
-        var angle = prevAngle + fraction*Math.PI*2; 
-  
-        c.fillStyle = colors[i]; 
-        
-        c.beginPath(); 
-        c.moveTo(250,250); 
-        c.arc(250,250, 100, prevAngle, angle, false); 
-        c.lineTo(250,250); 
-    
-        c.fill(); 
-        
-        c.strokeStyle = "white"; 
-        c.stroke(); 
-        c.lineWidth = 4;
-
-        prevAngle = angle; 
-        }
-
-    c.fillStyle = "black"; 
-    c.font = "24pt sans-serif"; 
-    var text = "Sales Data from 2025"; 
-    var metrics = c.measureText(text); 
-    c.fillText(text, 250-metrics.width/2, 400); 
+    ctx.fillStyle = 'red';
+    ctx.globalAlpha = 50/100; 
+    ctx.fillRect(0,0,100,100);
+    ctx.globalAlpha = 30/100;
+    ctx.fillRect(50,50,100,100);
+    ctx.globalAlpha = 1.0;
 </script> 
 </body> 
 </html>
