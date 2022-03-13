@@ -1,8 +1,10 @@
 #menu {
 	display: flex;
+	flex-direction: column;
 }
 #menu a {
-	margin-right: 8px;
+	width: 200px;
+	margin-bottom: 8px;
 	padding: 10px;
 	font: 15px Arial;
 	text-decoration: none;
