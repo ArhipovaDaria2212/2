@@ -1,12 +1,14 @@
 .parent	{
 	display: flex;
-	
+	flex-direction: column;
+	justify-items: flex-start;
 	justify-content: center;
 	width: 800px;
 	height: 500px;
 	border: 1px solid red;
 }
 .child {
+	height: 50px;
 	width: 80px;
 	border: 1px solid green;
 }
