@@ -1,6 +1,6 @@
 .parent	{
 	display: flex;
-	align-items: center;
+	
 	justify-content: center;
 	width: 800px;
 	height: 500px;
@@ -8,9 +8,8 @@
 }
 .child {
 	width: 80px;
-	height: 50px;
 	border: 1px solid green;
 }
 .elem {
-	align-self: flex-end;
+	align-self: center;
 }
