@@ -1,19 +1,19 @@
 #menu {
 	display: flex;
-	flex-direction: column;
+}
+#menu a.special {
+	background-color: white;
+	color: white;
 }
 #menu a {
-	width: 200px;
-	margin-bottom: 8px;
-	padding: 10px;
+	padding: 20px;
 	font: 15px Arial;
 	text-decoration: none;
 	background-color: #319775;
-	border: 1px solid #319775;
 	color: white;
 }
-#menu a:hover, #menu a.active {
-	color: #319775;
-	border: 1px solid #319775;
-	background-color: #F5F6FA;
+#menu a:hover, #menu a.active{
+	background-color: #256e56;
+	color: #F5F6FA;
 }
+
