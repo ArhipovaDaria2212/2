@@ -1,19 +1,17 @@
-.parent	{
+#menu {
 	display: flex;
-	flex-direction: column;
-	justify-items: flex-start;
-	justify-content: center;
-	width: 800px;
-	height: 500px;
-	border: 1px solid red;
 }
-.child {
-	height: 50px;
-	width: 80px;
-	border: 1px solid green;
+#menu a {
+	margin-right: 8px;
+	padding: 10px;
+	font: 15px Arial;
+	text-decoration: none;
+	background-color: #319775;
+	border: 1px solid #319775;
+	color: white;
 }
-.elem {
-	align-self: center;
-	order: 1;
-	border: 5px dotted red;
+#menu a:hover, #menu a.active {
+	color: #319775;
+	border: 1px solid #319775;
+	background-color: #F5F6FA;
 }
