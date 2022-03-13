@@ -1,24 +1,51 @@
-#wrapper {
-	margin: 0 auto;
-	width: 800px;
+* {
+	box-sizing: border-box;
 }
-#wrapper h1 {
-	text-align: center;
-	font-weight: 100;
+body {
+	margin: 0;
 }
-.content a {
-	text-decoration: none;
-	color: blue;
+.wrapper {
+	margin-bottom: 30px;
+	
 }
-.content a.menu {
+div.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+.wrapper.red {
+	background-color: red;
+	color: white;
+}
+.wrapper.green {
+	background-color: green;
+	color: white;
+	padding: 10px;
+}
+.wrapper.green p {
+	margin: 0;
+	font-size: 20px;
+}
+.wrapper.green h1 {
+	font-size: 40px;
 	font-weight: bold;
-	font-size: 25px;
 }
-.content a:hover {
-	text-decoration: underline;
+.wrapper.orange {
+	background-color: orange;
+	color: white;
+	height: 150px;
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
-.content {
-	border: 1px solid black;
-	margin-bottom: 15px;
-	padding: 40px 20px;
+
+.wrapper h1 {
+	margin: 0;
+	font: 40px "Times New Roman";
+}
+.wrapper p {
+	font: 16px/1.4 Arial;
+	text-align: justify;
 }
