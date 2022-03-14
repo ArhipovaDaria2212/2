@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $("div#head1").draggable({axis:"x"});
+    $("div#head1").draggable({cursor:"help"});
 });
