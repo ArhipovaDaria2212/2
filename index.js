@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("#accordion").selectable();
+    $("#sort1, #sort2").sortable({connectWith:".connect"});
  });
