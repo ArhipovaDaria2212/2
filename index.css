@@ -1,4 +1,11 @@
-#accordion {
+ #el1, #drop1, #drop2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+#el3, #el2 {
+    width: 100px;
+    height: 100px;
     border: 1px solid black;
 }
 .ui-selecting {
